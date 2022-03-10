@@ -1,0 +1,22 @@
+body{
+    padding: auto;
+    padding: auto;
+}
+.pure-g{
+    background-color: rgb(15, 1, 24);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    color: #fff;
+    background-color: #340652;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+svg{
+    height: 28px;
+}
