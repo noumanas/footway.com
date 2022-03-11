@@ -264,3 +264,19 @@ justify-content: center;
 .size_seleted{
   width: 400px;
 }
+.add-to-card{
+  background-color: #ff00ff;
+  height: 50px;
+  color: #fff;
+  width: 100%;
+}
+.product, .gratis, .dagers{
+  display: flex;
+  align-items: center;
+  color: #616161;
+  font-size: 0.9rem;
+}
+.svg-inline--fa{
+  height: 20px;
+  margin-right: 8px;
+}
