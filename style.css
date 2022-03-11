@@ -249,3 +249,18 @@ img{
   margin-bottom: 20px;
   margin-left: 25px;
 }
+.brand_logo_with_price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 674px;
+}
+.brand_main{
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.size_seleted{
+  width: 400px;
+}
