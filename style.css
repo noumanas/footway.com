@@ -280,3 +280,28 @@ justify-content: center;
   height: 20px;
   margin-right: 8px;
 }
+.all_brands{
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
+}
+.four_brands,.two_brands{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+}
+.brand1{
+  padding: 20px;
+  filter: grayscale(100%) brightness(200%) contrast(50%);
+}
+.brand1:hover{
+  filter: none;
+}
+.brand1:hover img{
+  opacity: 1;
+}
+.brand1  img{
+  opacity: 0.6;
+}
