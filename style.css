@@ -1,6 +1,8 @@
 body{
-    padding: auto;
-    padding: auto;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .grids-example {  
     background: rgb(15, 1, 24);              
@@ -48,7 +50,63 @@ body{
     width: 50px;
     height: 100%;
 }
-
+.close_icons{
+  height: 25px;
+  display: none;
+}
+.search-with-icons{
+  display: flex;
+  align-items: center;
+}
+.arrow_icons{
+  display: flex;
+}
+.arrow{
+  height: 25px;
+  float: right;
+  transition: all 0.5s;
+}
+.arrow_rotate{
+  transform: rotate(180deg);
+  transition: all 0.s;
+}
+.Visa_button{
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_produkter{
+  color: #fff;
+  border: 1px solid #000;
+  background-color: #340652;
+  font-weight: 500;
+  width: 100%;
+  height: 55px;
+  transition: all 1s;
+  border-radius: 10px 10px 10px 10px;
+}
+.btn_produkter:hover{
+  background-color: #000000;
+  transition: all 1s;
+  cursor: pointer;
+}
+.btn_visa_close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-left: 4px;
+  
+}
+.btn_visa_close svg{
+ 
+}
+.btn_visa_close:hover{
+  color: #717171;
+  cursor: pointer;
+}
 .search-input-box{
     width: 35%;
     display: block;
@@ -56,6 +114,10 @@ body{
     border: 1px solid #fff;
     border-radius: 5px 5px 5px 5px;
     transition: all 1s;
+}
+.search_box{
+  width: 40%;
+  
 }
 .input-search{
     height: 40px;
@@ -238,6 +300,9 @@ img{
   
   /* On smaller screens, decrease text size */
 @media only screen and (max-width: 400px) {
+  body{
+    overflow-x: hidden;
+  }
     .prev, .next,.text {font-size: 11px}
     .footer{
       height: 80%;
@@ -248,8 +313,17 @@ img{
     .full_menu{
       flex-direction: column;
     }
+    .search-input-box{
+      width: 100%;
+    }
+    .search_box{
+      width: 100%;
+    }
   }
   @media only screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    }
     .shoes{
       padding: 25px;
     }
@@ -262,8 +336,17 @@ img{
     .full_menu{
       flex-direction: column;
     }
+    .search-input-box{
+      width: 100%;
+    }
+    .search_box{
+      width: 100%;
+    }
   }
   @media only screen and (max-width: 568px) {
+    body{
+      overflow-x: hidden;
+    }
     .brand_logo_with_price{
       flex-direction: column;
     }
@@ -275,6 +358,12 @@ img{
     }
     .full_menu{
       flex-direction: column;
+    }
+    .search-input-box{
+      width: 100%;
+    }
+    .search_box{
+      width: 100%;
     }
   }
 
@@ -358,7 +447,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 674px;
+  width: 50%;
 }
 .brand_main{
 align-items: center;
@@ -372,6 +461,7 @@ justify-content: center;
 .add-to-card{
   background-color: #ff00ff;
   height: 50px;
+  margin-top: 92px;
   color: #fff;
   width: 100%;
 }
@@ -710,6 +800,17 @@ justify-content: center;
   font-size: 15px;
   font-weight: bold;
   transition: 0.4s;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
 }
 
 .active, .accordion:hover {

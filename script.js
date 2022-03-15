@@ -44,17 +44,24 @@ function showSlides(n) {
 var search_bar = document.getElementById('search_box');
 var s_icon = document.getElementById('s-icons');
 var search_active =document.querySelector('.search-active');
+var close_icons = document.querySelector('.close_icons');
+var Visa_button = document.querySelector('.Visa_button');
+
 search_bar.addEventListener('click',
 function search_action(){
-  search_bar.setAttribute('style',' height:300px; margin-top:260px; z-index:1; width:40%;');
+  search_bar.setAttribute('style',' height:auto; margin-top:290px; z-index:1; ');
   search_active.style.display="block";
+  close_icons.style.display="block";
+  // Visa_button.style.display="block";
   // s_icon.setAttribute('style','background-color: white; height: 22px; color: black; padding: 10px; border-radius: 10px 0px 1px 10px;')
 }
 );
 search_bar.addEventListener('mouseleave',
 function search_action(){
-  search_bar.setAttribute('style',' height:50%; margin-top:0px; z-index:1; ');
+  search_bar.setAttribute('style','  height:50%; z-index:1; ');
   search_active.style.display="none";
+  close_icons.style.display="none";
+  // Visa_button.style.display="none";
   // s_icon.setAttribute('style','background-color: ; height: 22px; color: black; padding: 10px; border-radius: 0;')
 }
 );
@@ -119,6 +126,7 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
+      
     } else {
       panel.style.display = "block";
     }

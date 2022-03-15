@@ -7,7 +7,7 @@
     href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"   
     integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"   
     crossorigin="anonymous">  
-    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css" />
     <link rel="stylesheet" href="style.css">
 </head>  
 <body>  
@@ -43,55 +43,71 @@
             <svg viewBox="0 0 512 512" fill="#fff" class="fa-search" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img"><path d="M128 166.8H0V115.6H128V166.8ZM128 243.6H0V294.8H128V243.6ZM475.904 422.8L377.856 324.752C357.376 338.064 333.312 346 307.2 346C236.544 346 179.2 288.656 179.2 218C179.2 147.344 236.544 90 307.2 90C377.856 90 435.2 147.344 435.2 218C435.2 244.112 427.264 268.176 413.952 288.4L512 386.704L475.904 422.8ZM384 218C384 175.76 349.44 141.2 307.2 141.2C264.96 141.2 230.4 175.76 230.4 218C230.4 260.24 264.96 294.8 307.2 294.8C349.44 294.8 384 260.24 384 218ZM0 422.8H256V371.6H0V422.8Z"></path></svg></svg>
         </div>
         <div class="search-input-box" id="search_box">
+            <div class="search-with-icons">
                 <input class="input-search" type="text" placeholder="Search as Filter pure" >
+                <svg class="close_icons" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            </div>
+               
                 <div class="search-active">
-                    <button class="accordion">Avdelning</button>
+                    <button class="accordion">Avdelning </button>
                     <div class="panel">
                         <div id="checkboxes">
                             <label for="one">
-                              <input type="checkbox" id="one" />Dam (11967)</label>
+                              <input type="checkbox" />Dam (11967)</label>
                             <label for="two">
-                              <input type="checkbox" id="two" />Barm (5318)</label>
+                              <input type="checkbox" />Barm (5318)</label>
                             <label for="three">
-                              <input type="checkbox" id="three" />Barm (4801)</label>
+                              <input type="checkbox" />Barm (4801)</label>
                         </div>
                     </div>
 
-                    <button class="accordion">Kategori</button>
+                    <button class="accordion">Kategori </button>
                     <div class="panel">
                         <div id="checkboxes">
                             <label for="one">
-                              <input type="checkbox" id="one" />Sneakers (5222)</label>
+                              <input type="checkbox"  />Sneakers (5222)</label>
                             <label for="two">
-                              <input type="checkbox" id="two" />sandaler (2802)</label>
+                              <input type="checkbox"  />sandaler (2802)</label>
                             <label for="three">
-                              <input type="checkbox" id="three" />Sportskor (1)</label>
+                              <input type="checkbox"  />Sportskor (1)</label>
                         </div>
                     </div>
 
-                    <button class="accordion">Varumarke</button>
+                    <button class="accordion">Varumarke </button>
                     <div class="panel">
                         <div id="checkboxes">
                             <label for="one">
-                              <input type="checkbox" id="one" />Sneakers (5222)</label>
+                              <input type="checkbox" />Sneakers (5222)</label>
                             <label for="two">
-                              <input type="checkbox" id="two" />sandaler (2802)</label>
+                              <input type="checkbox"  />sandaler (2802)</label>
                             <label for="three">
-                              <input type="checkbox" id="three" />Sportskor (1)</label>
+                              <input type="checkbox"  />Sportskor (1)</label>
                         </div>
                     </div>
-                    <button class="accordion">Storlek</button>
+                        <button class="accordion">Storlek</button>
+                        
+ 
                     <div class="panel">
                         <div id="checkboxes">
                             <label for="one">
-                              <input type="checkbox" id="one" />Sneakers (5222)</label>
+                              <input type="checkbox"  />Sneakers (5222)</label>
                             <label for="two">
-                              <input type="checkbox" id="two" />sandaler (2802)</label>
+                              <input type="checkbox" />sandaler (2802)</label>
                             <label for="three">
-                              <input type="checkbox" id="three" />Sportskor (1)</label>
+                              <input type="checkbox"  />Sportskor (1)</label>
                         </div>
                     </div>
+                    <div class="Visa_button">
+                        <button class="btn_produkter" tabindex="0" type="button" style="height: 55px;">
+                            <span>
+                                <span>Visa 19807 Produkter i lager</span>
+                             </span>
+                            </button>     
+                        <span class="btn_visa_close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-light" class="svg-inline--fa fa-times-light fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg></svg></span><span></span>
+            </div>
                 </div>
+                
         </div> 
         
         <div class="user-card-icons">
